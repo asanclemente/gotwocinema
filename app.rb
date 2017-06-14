@@ -16,9 +16,10 @@ post '/parejas' do
 
 	puntaje = parejasval.Parejasval(pareja1, pareja2)
 
+	"hola"
+
   	erb(:parejas)
 
-  	"tu puntaje #{puntaje}"
 
 
 end

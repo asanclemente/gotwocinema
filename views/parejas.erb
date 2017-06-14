@@ -8,14 +8,16 @@
 </head>
 <body>
 	<h1>bienvenido</h1>
-	<br>
+	<br><br>
 
-	<h1>puntaje</h1>
-	<input type="submit" name="Pelicula1" value="" onclick="document.getElementById('sel11').value ='Piratas'; document.getElementById('sel1').innerHTML ='Piratas'">	
-	<input type="submit" name="Personaje2" value="" onclick="document.getElementById('sel11').value='Cars'; document.getElementById('sel1').innerHTML='Cars'">
+	<h1>Tu Puntaje: </h1>
+
+	<br><br>
+	<input type="submit" name="Pelicula1" id="btn1" value="" onclick="document.getElementById('btn1').value ='Piratas';document.getElementById('btn2').value =''; document.getElementById('sel11').value ='Piratas'; document.getElementById('sel1').innerHTML ='Piratas'">	
+	<input type="submit" name="Personaje2" id="btn2" value="" onclick="document.getElementById('btn2').value='Cars';document.getElementById('btn1').value=''; document.getElementById('sel11').value='Cars'; document.getElementById('sel1').innerHTML='Cars'">
 	<br >
-	<input type="submit" name="pelicula2" value="" onclick="document.getElementById('sel22').value='Rayo'; document.getElementById('sel2').innerHTML='Rayo'">
-	<input type="submit" name="personaje1" value="" onclick="document.getElementById('sel22').value='Jack';document.getElementById('sel2').innerHTML='Jack'">
+	<input type="submit" name="pelicula2" id="btn3" value="" onclick="document.getElementById('btn3').value='Rayo';document.getElementById('btn4').value='';document.getElementById('sel22').value='Rayo'; document.getElementById('sel2').innerHTML='Rayo'">
+	<input type="submit" name="personaje1" id="btn4" value="" onclick="document.getElementById('btn4').value='Jack';document.getElementById('btn3').value='';document.getElementById('sel22').value='Jack';document.getElementById('sel2').innerHTML='Jack'">
 	
 	<br><br>
 	<label id="sel1">Seleccion 1</label>
