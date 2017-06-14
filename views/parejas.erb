@@ -11,11 +11,11 @@
 	<br>
 
 	<h1>puntaje</h1>
-	<input type="submit" name="Pelicula1" value="" onclick="document.getElementById('sel1').innerHTML='Piratas'">	
-	<input type="submit" name="Personaje2" value="" onclick="document.getElementById('sel1').innerHTML='Cars'">
+	<input type="submit" name="Pelicula1" value="" onclick="document.getElementById('sel11').value ='Piratas'; document.getElementById('sel1').innerHTML ='Piratas'">	
+	<input type="submit" name="Personaje2" value="" onclick="document.getElementById('sel11').value='Cars'; document.getElementById('sel1').innerHTML='Cars'">
 	<br >
-	<input type="submit" name="pelicula2" value="" onclick="document.getElementById('sel2').innerHTML='Rayo'">
-	<input type="submit" name="personaje1" value="" onclick="document.getElementById('sel2').innerHTML='Jack'">
+	<input type="submit" name="pelicula2" value="" onclick="document.getElementById('sel22').value='Rayo'; document.getElementById('sel2').innerHTML='Rayo'">
+	<input type="submit" name="personaje1" value="" onclick="document.getElementById('sel22').value='Jack';document.getElementById('sel2').innerHTML='Jack'">
 	
 	<br><br>
 	<label id="sel1">Seleccion 1</label>
@@ -25,8 +25,11 @@
 
 	<form action="/parejas" method="post">
 
-	<input id="sel1" name="sel1" type="hidden" value="">
-	<input id="sel2" name="sel2" type="hidden" value="Ficha2">
+	<input id="sel11" name="sel1" type="hidden" value="">
+	<input id="sel22" name="sel2" type="hidden" value="">
+
+	
+
 	<br><br>
 	<input type="submit" name="validar" value="validar">
 	</form>
