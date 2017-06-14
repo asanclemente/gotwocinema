@@ -2,21 +2,25 @@
 <html>
 <head>
 	<title>Go2Cinema</title>
+
 </head>
 <body>
-<from>
-	<input type="submit" name="Pelicula1" value="piratas">
-	<input type="submit" name="Personaje2" value="cars">
+
+	
+	<input type="submit" name="Pelicula1" value="" onclick="document.getElementById('sel1').innerHTML='Piratas'">	
+	<input type="submit" name="Personaje2" value="" onclick="document.getElementById('sel1').innerHTML='Cars'">
 	<br >
-	<input type="submit" name="pelicula2" value="rayo">
-	<input type="submit" name="personaje1" value="jack">
+	<input type="submit" name="pelicula2" value="" onclick="document.getElementById('sel2').innerHTML='Rayo'">
+	<input type="submit" name="personaje1" value="" onclick="document.getElementById('sel2').innerHTML='Jack'">
 
 	<br><br>
-
-	<label>Seleccion 1</label>
-	<label>Seleccion 2</label>
+<form action="/parejas" method="post">
+	<label id="sel1">Seleccion 1</label>
+	<label id="sel2">Seleccion 2</label>
 	<br><br>
 	<input type="submit" name="validar" value="validar">
-</from>
+</form>
+	
+
 </body>
 </html>
