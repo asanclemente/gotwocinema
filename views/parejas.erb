@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html>
 <head>
 	<title>Go2Cinema</title>
@@ -12,15 +14,28 @@
 	<br >
 	<input type="submit" name="pelicula2" value="" onclick="document.getElementById('sel2').innerHTML='Rayo'">
 	<input type="submit" name="personaje1" value="" onclick="document.getElementById('sel2').innerHTML='Jack'">
-
+	
 	<br><br>
-<form action="/parejas" method="post">
 	<label id="sel1">Seleccion 1</label>
 	<label id="sel2">Seleccion 2</label>
+
+	<br><br>
+
+	<form action="/parejas" method="post">
+
+	<input id="sel1" name="sel1" type="hidden" value="">
+	<input id="sel2" name="sel2" type="hidden" value="Ficha2">
 	<br><br>
 	<input type="submit" name="validar" value="validar">
-</form>
+	</form>
 	
+
+
+<script>
+	var str = $( "#sel1" ).text();
+	console
+	$(sel1).value;
+</script>
 
 </body>
 </html>
